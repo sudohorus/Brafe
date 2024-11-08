@@ -51,8 +51,8 @@ body{
     margin: 0 10px;
 }
 
-/*banner*/
 
+/*banner*/
 .intro{
     background-image: url(../imgs/bg-intro.jpg);
     padding: 150px 0;
@@ -79,8 +79,8 @@ body{
     margin: 10px auto;
 }
 
-/*sobre*/
 
+/*sobre*/
 .sobre{
     padding: 60px 0;
 }
@@ -124,6 +124,7 @@ body{
     padding: 5px 0 10px;
 
 }
+
 
 /*produtos*/
 .produtos{
@@ -185,4 +186,44 @@ h2.produtos-mineiro::before{
     width: 180px;
     padding: 15px 0;
     margin: 20px auto;
+}
+
+/*locais*/
+.locais{
+    padding: 60px 0;
+}
+
+.locais-item{
+    margin-bottom: 40px;
+}
+
+.locais-img, .locais-info{
+    flex: 1;
+    margin: 0 10px;
+}
+
+.locais-img{
+    display: block;
+    max-width: 100%;
+}
+
+.locais-item h2{
+    font-size: 2.25em;
+    margin-bottom: 20px;
+}
+
+.locais-item p{
+    font-size: 1.125em;
+    line-height: 1.4em;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+
+.locais-item a{
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid;
+    color: #252525;
+    padding: 10px 20px;
 }
