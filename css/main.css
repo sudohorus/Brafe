@@ -1,65 +1,65 @@
 /*reset*/
-body, h1, h2, h3, ul, p{
+body, h1, h2, h3,p, ul{
     padding: 0;
     margin: 0;
 }
-
 body{
-    font-family: Georgia, serif;
-    color: #255255;
+    font-family: Gergia, serif;
+    color: #252525;
 }
-
 *{
     box-sizing: border-box;
 }
-
 .container{
     display: flex;
     max-width: 960px;
     margin: 0 auto;
+   
 }
-
 /*menu*/
 .menu{
     background-color: #252525;
     padding: 15px 0;
 }
 
-.menu-nav{
-    flex: 1;
-    align-self: center;
-    margin: 0 10px;
-}
-
 .menu-nav a{
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 1.125em;
 }
 
-.menu-nav ul{
-    list-style: none;
-    float: right;
-    display: flex;
-}
+.menu-nav{
+    flex: 1;
+    margin: 0 10px;
+    align-self: center;
 
-.menu-nav ul li a{
-    padding: 10px;
 }
 
 .menu-logo{
     margin: 0 10px;
 }
 
+.menu nav ul{
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav ul li a{
+    padding: 10px;
+}
+
 
 /*banner*/
+
 .intro{
     background-image: url(../imgs/bg-intro.jpg);
     padding: 150px 0;
     background-size: cover;
-    color: #ffff;
+    color: #fff;
     text-align: center;
 }
+
 .intro h1{
     text-transform: uppercase;
     font-size: 3em;
@@ -79,53 +79,47 @@ body{
     margin: 10px auto;
 }
 
-
 /*sobre*/
+
 .sobre{
     padding: 60px 0;
 }
-
 .sobre h2{
     font-size: 2.25em;
     text-align: center;
     margin-bottom: 60px;
 }
-
 .sobre-item{
     flex: 1;
     margin: 0 10px;
 }
 
-.sobre > p{
-    font-size: 1.125em;
-    line-height: 1.4em;
-    font-style: italic;
-    margin: 20px auto;
-    max-width: 460px;
-    text-align: center;
-}
-
 .sobre-item img{
-    display: block;
-    max-width: 100%;
+	display: block;
+	max-width: 100%;
+}
+.sobre > p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	font-style: italic;
+	margin: 20px auto;
+	max-width: 460px;
+	text-align: center;
 }
 
 .sobre-item h3{
     font-size: 2.25em;
     line-height: 1em;
     background-color: #252525;
-    color: white;
+    color: #FFF;
     font-style: italic;
     font-weight: normal;
     text-align: center;
     position: relative;
     width: 220px;
     top: -25px;
-    padding: 5px 0 10px;
-
+    padding: 5px 0 10px 0;
 }
-
-
 /*produtos*/
 .produtos{
     background-color: #e7e4d8;
@@ -133,9 +127,8 @@ body{
     border-top: 3px solid #d6d3c8;
     border-bottom: 3px solid #d6d3c8;
 }
-
 .produtos-item{
-    flex: 1;
+    flex:1;
     margin: 0 10px 40px 10px;
 }
 
@@ -155,25 +148,23 @@ body{
     display: block;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
     background-color: currentColor;
+    border-radius: 50%;
     border: 5px solid #e7e4d8;
-    box-shadow: 0 0 0 5px currentColor;
+    box-shadow:  0 0 0 5px currentColor;
     margin: 20px auto;
 }
 
 h2.produtos-paulista::before{
-    color: #492201;
+    color: #492901;
 }
-
 h2.produtos-carioca::before{
-    color: #c17130;
+    color: #c17139;
 }
 
 h2.produtos-mineiro::before{
     color: #d7a54d;
 }
-
 .produtos-btn{
     border: 3px solid #252525;
     color: #252525;
@@ -187,26 +178,23 @@ h2.produtos-mineiro::before{
     padding: 15px 0;
     margin: 20px auto;
 }
-
 /*locais*/
 .locais{
     padding: 60px 0;
 }
-
 .locais-item{
     margin-bottom: 40px;
 }
 
 .locais-img, .locais-info{
-    flex: 1;
+    flex:1;
     margin: 0 10px;
 }
 
-.locais-img{
+.locais-img img{
     display: block;
     max-width: 100%;
 }
-
 .locais-item h2{
     font-size: 2.25em;
     margin-bottom: 20px;
@@ -226,4 +214,75 @@ h2.produtos-mineiro::before{
     border: 3px solid;
     color: #252525;
     padding: 10px 20px;
+}
+
+/*Assine*/
+.assine{
+    background-color: #e7e4d8;
+    padding: 30px 0;
+}
+
+.assine-info{
+    flex: 1;
+    margin: 0 10px;
+}
+
+.assine-info h2{
+    font-size: 2.25em;
+}
+
+.assine-info p{
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.assine form{
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.assine form label{
+    display: none;
+}
+
+.assine input {	
+	flex: 1;
+	align-self: flex-start;
+	background-color: none;
+	font-size: 1.5em;
+    border: 3px solid #252525;
+	font-family: Georgia, serif;
+	padding: 10px;
+}
+
+.assine button {
+    flex: 1;
+    align-self: flex-start;
+	background-color: #252525;
+	border: none;
+	font-family: Georgia, serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	padding: 13px ;
+	color: #fff;
+	cursor: pointer;
+}
+/*footer*/
+.footer{
+    background-color: #d6d3c8;
+    padding: 40px 0;
+}
+
+.footer-img{
+    margin: 0 10px;
+    flex: 1;
+    align-content: flex-end;
+}
+
+.footer p{
+    line-height: 1.4em;
+    font-size: 1.125em;
 }
